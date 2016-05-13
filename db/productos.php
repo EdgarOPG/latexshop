@@ -1,6 +1,6 @@
 <?php
 
-$conexion = mysqli_connect("localhost","root","","eshopper") or die("Error " . mysqli_error($conexion));// select the db name
+$conexion = mysqli_connect("localhost","root","1234","latexshop") or die("Error " . mysqli_error($conexion));// select the db name
 
 $query = "SELECT * FROM productos" or die("Error in the consult.." . mysqli_error($conexion)); 
 

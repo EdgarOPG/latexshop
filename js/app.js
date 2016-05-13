@@ -124,7 +124,7 @@ tienda.factory("global",
       if(obj.productos.length > 0)
         $rootScope.$broadcast("getCamisetas");
       else
-        $http.get("db/camisetas.php").success(
+        $http.get("db/playeras.php").success(
           function(data)
           {
             obj.camisetas = data;
@@ -139,7 +139,7 @@ tienda.factory("global",
       if(obj.productos.length > 0)
         $rootScope.$broadcast("getProductos");
       else
-        $http.get("db/productos.php").success(
+        $http.get("db/productos").success(
           function(data)
           {
             obj.productos = data;
